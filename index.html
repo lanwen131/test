@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>转动的圆环</title>
+	<style>
+	.demo{
+            width:250px;
+            height:250px;
+            border:50px solid red;
+            border-left-color:#ccc;
+            border-right-color:#ccc;
+            border-top-color:#ccc;
+            margin:100px;
+            border-radius: 50%;/*圆角*/
+            -webkit-animation:circle 1s infinite linear; 
+	}
+	@-webkit-keyframes circle{
+				0% {transform:rotate(0deg);}
+				100% {transform:rotate(-360deg);}
+	}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+</body>
+</html>
